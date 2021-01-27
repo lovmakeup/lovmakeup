@@ -1,0 +1,723 @@
+:root{
+  --color1: rgb(238, 26, 143);
+  --color2: rgba(23, 180, 83, 0.877);
+  --color3: rgba(11,194,211, 0.623);
+  --fondo: #f2f2f2;
+  --titulos: 33px;
+  --margenes: 60px;
+  --espacios: 10px;
+  --espacios-contenido:45px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'open sans';
+  background: var(--fondo);
+}
+
+img{
+  vertical-align: top;
+}
+
+
+/* Header */
+
+header{
+  width: 100%;
+  height:600px;
+  background: linear-gradient(to bottom,
+  rgba(211, 153, 66, 0.6),
+  rgba(29,241,171, .6),
+  rgba(7,109,150, .45)
+  ), url(../img/fondo.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+nav{
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 10px 0 rgba(252, 194, 194, 0.5);
+
+}
+
+.nav1{
+  background: transparent;
+  height: 80px;
+  color:#fff;
+}
+
+.nav2{
+  background: var(--fondo);
+  height:100px;
+  color:#000;
+}
+.sip{
+  overflow:auto;
+}
+
+.contenedor-nav{
+  display: flex;
+  margin: auto;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  max-width:1000px;
+  height:inherit;
+  overflow: hidden;
+}
+
+nav .enlaces a{
+  display: inline-block;
+  padding: 5px 0;
+  margin-right: 17px;
+  font-size: 17px;
+  font-weight: 300;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+  color: inherit;
+}
+
+nav .enlaces a:hover{
+  border-bottom: 3px solid #1498a4;
+  transition: 0.6s;
+}
+
+.logo, .logo img{ height:80px;}
+
+.icono{
+  display:none;
+  font-size: 24px;
+  padding: 23.5px 20px;
+}
+
+.textos{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color:#fff;
+  overflow: hidden;
+  text-align: center;
+}
+
+.textos>h1{font-size:80px;;}
+
+.textos>h2{font-size: 30px; font-weight: 300;}
+/*texto header */
+.textos-header>a {
+  display: inline-block;
+  border: 1px solid rgb(243, 237, 237);
+  border-radius: 15px;
+  color: rgb(252, 250, 250);
+  text-decoration: none;
+  font-weight: 300;
+  margin-top: 20px;
+  padding: 5px 2px;
+  width: 100px;
+
+  text-align: center;
+  background: var(--color1);
+  
+
+}
+
+.after::after{
+  content:'';
+  display: block;
+  margin: auto;
+  margin-top: var(--espacios);
+  width: 100px;
+  height: 2px;
+  background: var(--color1);
+  margin-bottom: var(--espacios-contenido);
+}
+
+/* Main */
+
+.contenedor{
+  margin:auto;
+  padding: var(--margenes) 0;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contenedor h3{
+  font-size: var(--titulos);
+  color: var(--color1);
+  margin-bottom: var(--espacios);
+}
+
+.contenedor p{
+  font-size: var(--subtitulos);
+  font-weight: 300;
+  color: var(--color1);
+}
+
+.team .after{
+  font-size: 18pt;
+  color: var(--color1);
+
+}
+
+.card{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+
+.btn{
+  border: none;
+  margin-top: 1.5em;
+  padding: 0.45em 1.1em;
+  border-radius: 3px;
+  font-family: Verdana, sans-serif;
+  color: white;
+  background: #1ac6d0;
+  cursor: pointer;
+}
+
+
+.people{
+  height: 85%;
+}
+
+.content-card img{
+  width:100%;
+  height :auto;
+  object-fit: cover;
+}
+@supports(object-fit: cover){
+    .content-card img{
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+    }
+}
+
+.texto-team{
+  height: 20%;
+  width: 100%;
+  padding: var(--espacios) 0;
+}
+
+.about{
+  background: linear-gradient(to bottom,
+  rgba(211, 153, 66, 0.6),
+  rgba(29,241,171, .6),
+  rgba(7,109,150, .45)
+  ),url(../img/categoria.jpg);
+  width:100%;
+  height:auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.servicios{
+  display: flex;
+  color:rgb(20, 19, 19);
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.caja-servicios{
+  width: 32%;
+  margin:auto;
+  text-align: center;
+}
+.caja-servicios>h4{
+  margin-bottom: var(--espacios);
+}
+
+.caja-servicios>p{
+  text-align: center;
+}
+
+.botones-work{
+  overflow: hidden;
+}
+
+.botones-work li{
+  display: inline-block;
+  text-align: center;
+  margin-left: var(--espacios);
+  margin-bottom: var(--espacios-contenido);
+  padding: 6px 12px;
+  border: 1px solid var(--color1);
+  list-style: none;
+  color: var(--color1);
+}
+
+.botones-work li:hover{
+  background: var(--color1);
+  color:#fff;
+  cursor: pointer;
+}
+
+.botones-work .active{
+  background: var(--color1);
+  color:#fff;
+}
+
+.galeria-work{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cont-work{
+ 
+  box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+  height:250px;
+  width:49%;
+  overflow: hidden;
+}
+
+.textos-work{
+  color: var(--color1);
+  margin:15px;
+}
+
+.textos-work h4{
+  font-size:25px;
+}
+
+/* Footer */
+
+footer{background:url(../img/teclado.jpg);}
+
+.marca-logo{
+  width: 40%;
+  margin: auto;
+  margin-bottom: var(--espacios);
+}
+.marca-logo img{
+  width: 100%;
+}
+.iconos{
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+  width: 100%;
+}
+.fab{
+  font-size:60px;
+  color: #FFF;
+  margin-bottom: var(--espacios);
+  display: inline-block;
+}
+
+footer p{
+  margin-top:var(--espacios);
+}
+
+@media screen and (max-width: 700px){
+  .nav2{
+    color: #fff;
+  }
+
+  .icono{
+    display:block;
+    cursor: pointer;
+  }
+
+  .enlaces{
+    position: fixed;
+    top:80px;
+    background: #2c3e50;
+    left: 0;
+    height: 100%;
+    transition: 1s;
+    width: 0;
+    overflow: hidden;
+  }
+
+  .enlaces a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+    background: #34495e;
+    color:#fff;
+  }
+
+  .textos>h1{font-size: 70px;}
+  .textos>h2{font-size:35px;}
+
+  .content-card{
+    width: 48%;
+    margin-bottom:var(--margenes);
+  }
+
+  :root{
+    --margenes: 30px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  :root{
+    --espacios-contenido: 25px;
+  }
+
+  .content-card{
+    width: 90%;
+  }
+
+  .caja-servicios{
+    width: 90%;
+    margin-bottom: var(--margenes);
+  }
+
+  .cont-work{
+    width: 85%;
+  }
+
+  .marca-logo{
+    width: 80%;
+  }
+
+  .iconos{
+    margin: auto;
+  }
+}
+
+
+/* About us */
+
+main .sobre-nosotros{
+  padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imagen-about-us{
+  width: 48%;
+}
+
+.sobre-nosotros .contenido-textos{
+  width: 48%;
+}
+
+.contenido-textos h3{
+  margin-bottom: 15px;
+  font-size:20pt;
+  text-align:left;
+  
+}
+.contenido-textos .texto{
+  margin-bottom: 2px;
+  font-size:17pt;
+  text-align:left;
+  text-align: justify; 
+}
+
+.contenido-textos .texto2{
+  background: var(--color1);
+  color: rgb(240, 232, 232);
+  border-radius: 50%;
+  display: inline-block;
+  text-align: right;
+  padding:2px;
+  width: 29px;
+  height: 29px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+  margin-right: 10px;
+}
+
+.contenido-textos h3 span{
+  background: var(--color1);
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+  margin-right: 5px;
+}
+
+.contenido-textos p{
+  padding: 0px 0px 30px 15px;
+  font-weight: 300;
+  text-align: justify;
+}
+
+
+  @media screen and (max-width:500px){
+  
+
+    /* ABOUT US */
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 95%;
+    }
+
+    /* Clients */
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
+
+
+.logo-footer{
+  text-align: left;
+  padding-left: -120px;
+}
+
+.contenedor-footer{
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+  text-align: center;
+}
+
+.content-foo h4{
+  color: #fff;
+  border-bottom: 3px solid #af20d3;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.content-foo p{
+  color: #ccc;
+}
+
+.titulo-final{
+  text-align: center;
+  font-size: 12px;
+  
+  color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+  header{
+      background-position: center;
+  }
+
+  
+  .contenedor-sobre-nosotros{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .sobre-nosotros .contenido-textos{
+      width: 90%;
+  }
+
+  .imagen-about-us{
+      width: 90%;
+  }
+}
+
+/* FORMULARIO */
+.formulario {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.97);
+}
+
+.imgLogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 150px;
+  display: block;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  /*border: 1px solid rgba(109, 86, 10, 0.7);*/
+}
+
+.formulario__titulo,
+.formulario__subtitulo,
+.formulario__parrafo {
+  text-align: center;
+  margin-top: 0;
+}
+.formulario__titulo,
+.formulario__subtitulo {
+  color: var(--color1);
+}
+.formulario__parrafo {
+  color:var(--color1);
+}
+.formulario__input,
+.formulario__label {
+  display: block;
+  width: 100%;
+  font-size: 1, 3em;
+  
+  
+}
+.formulario__input {
+  padding: 10px;
+  background: transparent;
+  /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+.formulario__input:focus {
+  /*outline: 1px solid rgba(0,0,0,0.7);*/
+  outline: none;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
+}
+/*.formulario__input:focus + .formulario__label{
+    margin-top: -120px;
+}*/
+.formulario__label {
+  padding-left: 15px;
+  /*position: absolute;*/
+  /*margin-top: -78px;*/
+  /*z-index: -20;*/
+  color: var(--color1);
+  /*transition: all 0.2s;*/
+  margin: 2px;
+  
+}
+.formulario__submit {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  display: block;
+  width: 50%;
+  font-size: 1, 3em;
+}
+
+/*Centrar los campos del formulario (Los input y el boton de Enviar al WhatsApp, que tambien es un input)*/
+
+.formulario__input,
+.formulario__submit {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*.fijar {
+    margin-top: -120px;
+} */
+
+/* respuesta del formulario */
+#respuesta {
+  width: 100%;
+  height: 50px;
+  margin: 5px;
+  padding: 5px;
+}
+#respuesta.fail {
+  color: red;
+}
+#respuesta.send {
+  color: green;
+}
+
+/*  Our team */
+
+.about-services{
+  background: #f2f2f2;
+  padding-bottom: 30px;
+}
+
+
+.servicio-cont{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.servicio-ind{
+  width: 28%;
+  text-align: center;
+}
+
+.servicio-ind img{
+  width: 90%;
+}
+
+.servicio-ind h3{
+  margin: 10px 0;
+}
+
+.servicio-ind p{
+  font-weight: 300;
+  text-align: justify;
+}
+
+
+
+

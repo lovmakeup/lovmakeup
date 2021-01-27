@@ -1,0 +1,376 @@
+:root{
+    --color1: rgb(238, 26, 143);
+    --color2: rgba(23, 180, 83, 0.877);
+    --color3: rgba(11,194,211, 0.623);
+    --fondo: #f2f2f2;
+    --titulos: 33px;
+    --margenes: 60px;
+    --espacios: 10px;
+    --espacios-contenido:45px;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Footer */
+  
+  footer{background:url(../img/teclado.jpg);}
+  
+  .marca-logo{
+    width: 40%;
+    margin: auto;
+    margin-bottom: var(--espacios);
+  }
+  .marca-logo img{
+    width: 100%;
+  }
+  .iconos{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .fab{
+    font-size:60px;
+    color: #FFF;
+    margin-bottom: var(--espacios);
+    display: inline-block;
+  }
+  
+  footer p{
+    margin-top:var(--espacios);
+  }
+  
+  @media screen and (max-width: 700px){
+    .nav2{
+      color: #fff;
+    }
+  
+    .icono{
+      display:block;
+      cursor: pointer;
+    }
+  
+    .enlaces{
+      position: fixed;
+      top:80px;
+      background: #2c3e50;
+      left: 0;
+      height: 100%;
+      transition: 1s;
+      width: 0;
+      overflow: hidden;
+    }
+  
+    .enlaces a{
+      display: block;
+      width: 100%;
+      height: 50px;
+      padding: 20px;
+      text-align: center;
+      background: #34495e;
+      color:#fff;
+    }
+  
+    .textos>h1{font-size: 70px;}
+    .textos>h2{font-size:35px;}
+  
+    .content-card{
+      width: 48%;
+      margin-bottom:var(--margenes);
+    }
+  
+    :root{
+      --margenes: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 500px){
+    :root{
+      --espacios-contenido: 25px;
+    }
+  
+    .content-card{
+      width: 90%;
+    }
+  
+    .caja-servicios{
+      width: 90%;
+      margin-bottom: var(--margenes);
+    }
+  
+    .cont-work{
+      width: 85%;
+    }
+  
+    .marca-logo{
+      width: 80%;
+    }
+  
+    .iconos{
+      margin: auto;
+    }
+  }
+  
+  
+  
+    @media screen and (max-width:500px){
+    
+  
+      /* Footer */
+  
+      .contenedor-footer{
+          flex-direction: column;
+          border: none;
+      }
+  
+      .content-foo{
+          margin-bottom: 20px;
+          text-align: center;
+      }
+  
+      .content-foo h4{
+          border: none;
+      }
+  
+      .content-foo p{
+          color: #ccc;
+          border-bottom: 1px solid #f2f2f2;
+          padding-bottom: 20px;
+      }
+  
+      .titulo-final{
+          font-size: 20px;
+      }
+  }
+  
+  .scrol{
+    background:red;
+    overflow:auto;
+
+  }
+  .logo-footer{
+    text-align: left;
+    padding-left: -120px;
+  }
+  
+  .contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .content-foo{
+    text-align: center;
+  }
+  
+  .content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .content-foo p{
+    color: #ccc;
+  }
+  
+  .titulo-final{
+    text-align: center;
+    font-size: 12px;
+    
+    color: #9e9797;
+  }
+  
+  .nav a{
+    display: inline-block;
+    padding: 10px 0;
+    margin-right: 17px;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    color: inherit;
+
+  }
+  .nav a:hover{
+    border-bottom: 3px solid #1498a4;
+    transition: 0.6s;
+  }
+  .nav{
+    display: flex;
+    margin: auto;
+    padding-left: 72%;
+    align-items: center;
+
+  }
+
+  body{
+    background: #E0E4E5;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .wrap{
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .wrap > h1{
+    color: #494B4D;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px 0px;
+  }
+  
+  .wrap > h1:after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #C7C7C7;
+    margin: 20px 0;
+  }
+  
+  .store-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .category_list{
+    display: flex;
+    flex-direction: column;
+    width: 18%;
+  }
+  
+  .category_list .category_item{
+    display: block;
+    width: 90%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background: #E84C3D;
+  
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .category_list .ct_item-active{
+    background: #2D3E50;
+  }
+  
+  /* PRODUCTOS ============*/
+  
+  .products-list{
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  .products-list .product-item{
+    width: 22%;
+    margin-left: 3%;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-start;
+    transition: all .4s;
+  }
+  
+  .products-list .product-item img{
+    width: 100%;
+  }
+  
+  .products-list .product-item a{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background: #2D3E50;
+  
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* RESPONSIVE */
+  
+  @media screen and (max-width: 1100px){
+    .products-list .product-item{
+      width: 30.3%;
+    }
+  }
+  
+  @media screen and (max-width: 900px){
+    .category_list,
+    .products-list{
+      width: 100%;
+    }
+  
+    .category_list{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .category_list .category_item{
+      align-self: flex-start;
+      width: 15%;
+      font-size: 14px;
+    }
+  
+    .products-list .product-item{
+      margin-left: 4.5%;
+      
+    }
+  
+    .products-list .product-item:nth-child(3n+1){
+      margin-left: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 700px){
+    .category_list{
+      flex-direction: column;
+    }
+    .category_list .category_item{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 600px){
+  
+    .products-list .product-item{
+      width: 100%;
+      
+    }
+  
+    .products-list .product-item:nth-child(3n+1){
+      margin-left: 4.5%;
+    }
+  
+    .products-list .product-item:nth-child(2n+1){
+      margin-left: 0px;
+    }
+  
+  }
+  
+  @media screen and (max-width: 350px){
+    .products-list .product_item{
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
+
+  .precio-soles{
+    font-size: 38px;
+  }

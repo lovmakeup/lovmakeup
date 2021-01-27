@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">   
+    <link rel="stylesheet" href="../css/sweetalert2.min.css">
+    <link rel="stylesheet" href="../css/estilos_prod.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+ 
+    
+    <title>Lovemakeup</title>
+</head>
+
+<body>
+
+    <header><!--nav de pagina-->
+        <div class="container">
+            <div class="row align-items-stretch justify-content-between">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                    <a class="navbar-brand" href="#">Lovemakeup</a>
+                    <ul class="navbar-nav mr-auto"><!--Carrito-->
+                            <li class="nav-item dropdown">
+                                <img src="../img/cart.jpeg" class="nav-link dropdown-toggle img-fluid" height="70px"
+                                    width="70px" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false"></img>
+                                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                                    <table id="lista-carrito" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody ></tbody>
+                                    </table>
+
+                                    <a href="#" id="vaciar-carrito" class="btn btn-danger btn-block">Vaciar Carrito</a>
+                                    <a href="#" id="procesar-pedido" class="btn btn-primary btn-block">Procesar Compra</a>
+                                </div>
+                            </li>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <div class="nav">
+                            <div  id="enlaces" class="navbar-nav mr-auto">
+                                <a href="../index.html" id="enlace-inicio" class="navbar-brand">Inicio</a>
+                                <a href="nosotros.html"  class="navbar-brand">Nosotros</a>
+                                <a href="carrito.html" class="navbar-brand">Productos</a>
+                                <a href="contacto.html" id="enlace-contacto" class="navbar-brand">Contacto</a>
+                            </div> 
+                        </div>
+                         
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header><!--nav de pagina-->
+
+<main><!--Lista de todo los productos-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="wrap">
+            
+            <h1>Escoge Producto</h1>
+            <div class="store-wrapper">
+                <div class="category_list">
+                    <a href="#" class="category_item" category="all">Todo</a>
+                    <a href="#" class="category_item" category="ordenadores">Labiales</a>
+                    <a href="#" class="category_item" category="laptops">Mascara de Pestaña</a>
+                    <a href="#" class="category_item" category="smartphones">Sombras</a>
+                </div>
+                <section class="products-list">
+    
+                    <div class="container" id="lista-productos" >
+                        
+                            <section ><!--mascara de pestaña-->
+                                <div class="card-deck mb-3 text-center">
+                                    <div class="product-item" category="laptops">
+                                        <div class="card-header">
+                                            <h4 class="my-0 font-weight-bold">K0689703</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="../img/productos/K0689703.jpg" class="card-img-top">
+                                            <h1 class="card-title pricing-card-title precio">S/. <span class="precio-soles">40.90</span></h1>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="1">Agregar Carrito</a>
+                                        </div>
+                                    </div>
+                                    <div class="product-item" category="laptops">
+                                        <div class="card-header">
+                                            <h4 class="my-0 font-weight-bold">K3752300</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="../img/productos/K3752300.jpg" class="card-img-top">
+                                            <h1 class="card-title pricing-card-title precio">S/. <span class="precio-soles">44.90</span></h1>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="11">Agregar Carrito</a>
+                                        </div>
+                                    </div>
+                                    
+                                    
+
+                                </div>
+
+                            </section><!--mascara de pestaña-->
+
+                            <section><!--labiales-->
+                                <div class="card-deck mb-3 text-center">
+                                    <div class="product-item" category="ordenadores">
+                                        <div class="card-header">
+                                            <h4 class="my-0 font-weight-bold">k2958600 </h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="../img/productos/k2958600.jpg" class="card-img-top">
+                                            <h1 class="card-title pricing-card-title precio">S/. <span class="precio-soles">44.90</span></h1>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="2">Agregar Carrito</a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="product-item" category="ordenadores">
+                                        <div class="card-header">
+                                            <h4 class="my-0 font-weight-bold">K2958700</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="../img/productos/K2958700.jpg" class="card-img-top">
+                                            <h1 class="card-title pricing-card-title precio">S/. <span class="precio-soles">44.90</span></h1>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="3">Agregar Carrito</a>
+                                        </div>
+                                    </div>
+ 
+                                    <div class="product-item" category="ordenadores">
+                                        <div class="card-header">
+                                            <h4 class="my-0 font-weight-bold">k2958800</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="../img/productos/k2958800.jpg" class="card-img-top">
+                                            <h1 class="card-title pricing-card-title precio">S/. <span class="precio-soles">44.90</span></h1>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="4">Agregar Carrito</a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="product-item" category="ordenadores">
+                                        <div class="card-header">
+                                            <h4 class="my-0 font-weight-bold">K2959000</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="../img/productos/K2959000.jpg" class="card-img-top">
+                                            <h1 class="card-title pricing-card-title precio">S/. <span class="precio-soles">44.90</span></h1>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="5">Agregar Carrito</a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="product-item" category="ordenadores">
+                                        <div class="card-header">
+                                            <h4 class="my-0 font-weight-bold">K2959100</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="../img/productos/K2959100.jpg" class="card-img-top">
+                                            <h1 class="card-title pricing-card-title precio">S/. <span class="precio-soles">44.90</span></h1>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="6">Agregar Carrito</a>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="product-item" category="ordenadores">
+                                        <div class="card-header">
+                                            <h4 class="my-0 font-weight-bold">K2959200</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="../img/productos/K2959200.jpg" class="card-img-top">
+                                            <h1 class="card-title pricing-card-title precio">S/. <span class="precio-soles">44.90</span></h1>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="7">Agregar Carrito</a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="product-item" category="ordenadores">
+                                        <div class="card-header">
+                                            <h4 class="my-0 font-weight-bold">K2959300</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="../img/productos/K2959300.jpg" class="card-img-top">
+                                            <h1 class="card-title pricing-card-title precio">S/. <span class="precio-soles">44.90</span></h1>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="8">Agregar Carrito</a>
+                                        </div>
+                                    </div>
+            
+                                    <div class="product-item" category="ordenadores">
+                                        <div class="card-header">
+                                            <h4 class="my-0 font-weight-bold">K2959400</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="../img/productos/K2959400.jpg" class="card-img-top">
+                                            <h1 class="card-title pricing-card-title precio">S/. <span class="precio-soles">44.90</span></h1>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="9">Agregar Carrito</a>
+                                        </div>
+                                    </div>
+            
+
+                                    <div class="product-item" category="ordenadores">
+                                        <div class="card-header">
+                                            <h4 class="my-0 font-weight-bold">K2959500</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="../img/productos/K2959500.jpg" class="card-img-top">
+                                            <h1 class="card-title pricing-card-title precio">S/. <span class="precio-soles">44.90</span></h1>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="10">Agregar Carrito</a>
+                                        </div>
+                                    </div>
+            
+                                    
+            
+                                    <div class="product-item" category="ordenadores">
+                                        <div class="card-header">
+                                            <h4 class="my-0 font-weight-bold">K2959400</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <img src="../img/productos/K2959400.jpg" class="card-img-top">
+                                            <h1 class="card-title pricing-card-title precio" >S/. <span class="precio-soles">44.90</span></h1>
+                                            <a href="" class="btn btn-block btn-primary agregar-carrito" data-id="12">Agregar Carrito</a>
+                                        </div>
+                                    </div>
+    
+
+                                </div>
+                                
+                            </section><!--labiales-->  
+                            
+                            <section><!--sombras-->
+
+                            </section><!--sombras--> 
+         
+                    </div>
+
+                </section>
+                
+            </div>
+        </div>
+        
+    </main><!--Lista de todo los productos-->
+
+    <footer id="contacto"><!--Pied de pagina-->
+        <div class="footer contenedor">
+            <h3>Contactenos</h3>
+            <div class="contenedor-footer">
+                <div class="content-foo">
+                    <h4>Celular</h4>
+                    <p>965656884</p>
+                </div>
+                <div class="content-foo">
+                    <h4>Correo</h4>
+                    <p>lovmakeup.hyo@gmail.com</p>
+                </div>
+                <div class="content-foo">
+                    <h4>Ubicacion</h4>
+                    <p>Huancayo</p>
+                </div>
+            </div>
+            <br>     
+            <div class="iconos" id="enlace-contacto">
+                <a href="dashboard/formulario.html"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://www.facebook.com/Lovemakeup-107413311307501"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/lovmakeup.hyo/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>La pasión e innovación es lo que nos distingue del resto</p>
+        </div>
+        <h2 class="titulo-final">&copy;2021 Lovmakeup | Derechos Reservados</h2>
+
+    </footer><!--Pied de pagina-->
+
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/sweetalert2.min.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/pedido.js"></script>
+       <!--listar prod por categoria-->
+	<script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
