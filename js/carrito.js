@@ -39,6 +39,12 @@ class Carrito {
         }
         else {
             this.insertarCarrito(infoProducto);
+            swal({
+                title: "OK",
+                text: "Se agrego al carrito de compras!",
+                icon: "success",
+                button: "Seguir comprando!",
+              });
         }
         
     }
